@@ -68,7 +68,7 @@ def Euler_convert2rotationvector(head_rotation):
         cur_distance=dist.euclidean(yxz2arr[key-1],yxz2arr[key])
         accumulated_distance_=accumulated_distance_+cur_distance
         accumulated_distance.append(accumulated_distance_)
-        
+    accumulated_distance.insert(0,0)
     accumulated_distance2arr=np.array(accumulated_distance)
    
     return acm_distance2arr
